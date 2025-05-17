@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login + Signup</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Toggle buttons for switching between Login and Signup -->
+  <input type="radio" name="formToggle" id="login" checked>
+  <input type="radio" name="formToggle" id="signup">
+
+  <!-- Header section with tabs for Login and Signup -->
+  <div class="form-header">
+    <label for="login">Login</label>
+    <label for="signup">Sign Up</label>
+  </div>
+
+  <!-- Login form section -->
+  <div class="form-content login-form">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button>Login</button>
+  </div>
+
+  <!-- Signup form section -->
+  <div class="form-content signup-form">
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="Username" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button>Sign Up</button>
+  </div>
+</div> 
+</body>
+</html>
+

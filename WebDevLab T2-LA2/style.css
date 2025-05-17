@@ -1,0 +1,76 @@
+ * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f2f5;
+    }
+
+    .container {
+      width: 350px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .form-header {
+      display: flex;
+    }
+
+    .form-header label {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      background: #eee;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    #login:checked ~ .form-header label[for="login"],
+    #signup:checked ~ .form-header label[for="signup"] {
+      background: #3498db;
+      color: white;
+    }
+
+    .form-content {
+      padding: 20px;
+      display: none;
+    }
+
+    #login:checked ~ .login-form,
+    #signup:checked ~ .signup-form {
+      display: block;
+    }
+
+    .form-content input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-content button {
+      width: 100%;
+      padding: 10px;
+      background: #3498db;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-content button:hover {
+      background: #2980b9;
+    }
